@@ -4,3 +4,17 @@ services:
     image: 'redis:alpine'
     ports:
       - '6379:6379'
+  api:
+    env_file:
+      - ./.env
+    build:
+      dockerfile: ./Dockerfile-api
+      context: .
+    ports:
+      - '3000:3000'
+  queue:
+    env_file:
+      - ./.env
+    build:
+      dockerfile: ./Dockerfile-queue
+      context: .
