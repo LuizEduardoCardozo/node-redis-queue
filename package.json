@@ -1,0 +1,11 @@
+{
+  "name": "node-redis-queue",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/LuizEduardoCardozo/node-redis-queue.git",
+  "author": "LuizEduardoCardozo <eduard.cardoz@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^4.2.4"
+  }
+}
